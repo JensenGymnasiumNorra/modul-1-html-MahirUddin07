@@ -3,8 +3,8 @@ Uppgift 5 - Formulär
 
 På sidan ska det finnas:
     - Ett formulär som innehåller minst följande:
-        - Två textfält
-        - En radio-input
+        - Två textfält 
+        - En radio-input 
         - En checkbox-input
         - En submit-knapp som submittar formuläret och skickar användaren till en tack.html
         - En select+option input
@@ -23,11 +23,50 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Formulär Uppgift</title>
 </head>
 
 <body>
+    <h1>Formulär</h1>
+<form action="tackar.html" method="get">
+   
+    <fieldset>
+        <legend>Personlig Info</legend>
+        
+        <label for="fname">Förnamn:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        
+        <label for="lname">Efternamn:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+    </fieldset>
 
+    <fieldset>
+        <legend>Kön</legend>
+        <label> <input type="radio" namn="Kön" value="man"> Man </label><br>
+        <label> <input type="radio" namn="Kön" value="kvinna"> Kvinna </label><br> 
+    </fieldset>
+
+    <fieldset>
+        <legend>Intressen</legend>
+        <label> <input type="checkbox" name="intressen" value="sport"> Sport </label><br>
+        <label> <input type="checkbox" name="intressen" value="musik"> Musik </label><br>
+        <label> <input type="checkbox" name="intressen" value="resor"> Resor </label><br>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Favoritmat</legend>
+        <label for="food">Välj din favoritmat:</label><br>
+        <select id="food" name="food">
+            <option value="pizza" selected>Pizza</option>
+            <option value="sushi">Sushi</option>
+            <option value="pasta">Pasta</option>
+            <option value="hamburgare">Hamburgare</option>
+        </select><br><br>
+    </fieldset>
+    <input type="submit" value="Skicka">
+
+
+</form>
 </body>
 
 </html>
